@@ -14,7 +14,6 @@ const findKeyByValue = function(objectToSearchThrough, valueToSearchWith) {
       return keys[i];
     }
   }
-  return undefined;
 };
 
 
