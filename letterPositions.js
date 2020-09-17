@@ -6,12 +6,15 @@ const letterPositions = function(sentence) {
     if (results[letter]) {
       results[letter].push(incrementor)
       incrementor++
+      console.log(letter)
       } else {
       results[letter] = [incrementor];
       incrementor++
+      console.log(results[letter])
     }
   }
   return results;
 }
 
-console.log(letterPositions("hello"));
+console.log();
+letterPositions("hello")
