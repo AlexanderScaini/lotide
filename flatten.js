@@ -40,3 +40,5 @@ const flatten = function(bigOlHonkenArray) {
   }
   return console.log(shinyNewArray);
 };
+
+module.exports = flatten;
