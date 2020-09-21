@@ -1,22 +1,19 @@
 const letterPositions = function(sentence) {
-  const noSpace = sentence.split(' ').join('')
+  const noSpace = sentence.split(' ').join('');
   const results = {};
   let incrementor = 0;
   for (const letter of noSpace) {
     if (results[letter]) {
-      results[letter].push(incrementor)
-      incrementor++
-      console.log(letter)
-      } else {
+      results[letter].push(incrementor);
+      incrementor++;
+    } else {
       results[letter] = [incrementor];
-      incrementor++
-      console.log(results[letter])
+      incrementor++;
     }
   }
   return results;
-}
+};
 
-console.log();
-letterPositions("hello")
+// console.log(letterPositions("hello"))
 
 module.exports = letterPositions;

@@ -4,22 +4,22 @@ const middle = function(array) {
   let evenOrOdd = 0;
 
   // console.log(array.length)
-   if (array.length <= 2) {
-      return [];
-    };
+  if (array.length <= 2) {
+    return [];
+  }
 
   const howMany = function(number) {
     if (number % 1 === 0) {
       // console.log("even");
-      theMiddle -= 1
-      return number + 1
+      theMiddle -= 1;
+      return number + 1;
     } else {
       // console.log("odd");
-      return number + 1
+      return number + 1;
     }
   };
   evenOrOdd = howMany(theMiddle);
   return array.slice(Math.floor(theMiddle), evenOrOdd);
 };
 
-module.exports = middle; 
+module.exports = middle;
