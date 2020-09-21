@@ -1,5 +1,5 @@
 const eqArrays = function(firstArray, secondArray) {
-  for (let i = 0; i < firstArray.length; i++) {
+  for (let i in firstArray) {
     if (!(firstArray[i] === secondArray[i])) {
       return false;
     }
