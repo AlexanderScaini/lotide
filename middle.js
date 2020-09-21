@@ -5,7 +5,7 @@ const middle = function(array) {
 
   // console.log(array.length)
    if (array.length <= 2) {
-      return console.log([]);
+      return [];
     };
 
   const howMany = function(number) {
